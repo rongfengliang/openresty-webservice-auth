@@ -4,5 +4,8 @@ services:
      image: openresty/openresty:1.21.4.1-3-alpine-fat
      volumes:
      - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+     - "./app.html:/usr/local/openresty/nginx/html/app.html"
+     - "./header.html:/usr/local/openresty/nginx/html/header.html"
+     - "./footer.html:/usr/local/openresty/nginx/html/footer.html"
      ports:
      - "80:80"
