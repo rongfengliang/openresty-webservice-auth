@@ -5,7 +5,9 @@ services:
      volumes:
      - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
      - "./app.html:/usr/local/openresty/nginx/html/app.html"
+     - "./mydemos:/usr/local/openresty/nginx/html/dalong"
      - "./flush.html:/usr/local/openresty/nginx/html/flush.html"
+     - "./flush2.html:/usr/local/openresty/nginx/html/flush2.html"
      - "./header.html:/usr/local/openresty/nginx/html/header.html"
      - "./footer.html:/usr/local/openresty/nginx/html/footer.html"
      ports:
